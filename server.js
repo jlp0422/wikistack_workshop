@@ -12,7 +12,7 @@ app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
 
 app.use(bodyparser.urlencoded());
-app.use('/vendor', express.static(path.join(__dirname, 'node_modules')));
+app.use('/vendor', express.static(path.join(__dirname, 'public')));
 
 const port = process.env.PORT || 3000;
 
